@@ -10,6 +10,13 @@
   <!-- Musik -->
   <audio id="bg-music" src="assets/not.mp3" preload="auto"></audio>
 
+  <!-- HALAMAN WELCOME -->
+  <div id="welcome-screen" class="welcome-screen">
+    <h1>Selamat Datang di</h1>
+    <h2>🔥 SHOHEH STORE 🔥</h2>
+    <button onclick="enterSite()">MASUK</button>
+  </div>
+
   <!-- Container Konten -->
   <div class="container">
     <h1 class="judul">🔥 SHOHEH STORE 🔥</h1>
@@ -60,22 +67,17 @@
   </div>
 
   <script>
-    let musicPlayed = false;
-    function playMusic() {
-      if (!musicPlayed) {
-        const audio = document.getElementById('bg-music');
-        audio.volume = 0.5;
-        audio.play().catch(e => console.log('Gagal play musik:', e));
-        musicPlayed = true;
-      }
-    }
-    document.addEventListener('DOMContentLoaded', () => {
+    function enterSite() {
       const audio = document.getElementById('bg-music');
-      audio.volume = 0.5; // Set volume to 50%
-      audio.loop = true; // Loop the music
-    });
-    document.addEventListener('auto', playMusic);
-    document.addEventListener('touchstart', playMusic);
+      const welcome = document.getElementById('welcome-screen');
+      const main = document.getElementById('main-content');
+
+      audio.volume = 0.5;
+      audio.play().catch(e => console.log("Gagal play musik:", e));
+
+      welcome.style.display = "none";
+      main.style.display = "block";
+    }
   </script>
 </body>
 </html>
