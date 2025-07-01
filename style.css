@@ -78,7 +78,7 @@ body {
 }
 
 .welcome-screen h1 {
-  font-size: 28px;
+  font-size: 20px;
   margin: 0;
   color: #00ffd5;
 }
@@ -92,7 +92,7 @@ body {
 .welcome-screen button {
   background-color: #00adb5;
   color: white;
-  font-size: 10px;
+  font-size: 15px;
   padding: 12px 30px;
   border: none;
   border-radius: 10px;
