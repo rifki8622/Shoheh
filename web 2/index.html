@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>SHOHEH Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body onclick="playMusic()">
+  <!-- Musik -->
+  <audio id="bg-music" src="assets/not.mp3" preload="auto"></audio>
+
+  <!-- Container Konten -->
+  <div class="container">
+    <h1 class="judul">🔥 SHOHEH STORE 🔥</h1>
+
+    <div class="button-grid">
+      <!-- Button 1 -->
+      <a href="https://wa.me/62895622182398?text=bang%20Shoheh%20saya%20mau%20SC%20DDOS%20404%2010K" class="btn">
+        <img src="assets/ddos404.png" alt="SC DDOS 404">
+        <p class="desc">Script ringan buat nyerang website.</p>
+        <span>SC DDOS 404 – 10K</span>
+      </a>
+
+      <!-- Button 2 -->
+      <a href="https://wa.me/62895622182398?text=bang%20Shoheh%20saya%20mau%20SC%20DDOS%20505%2015K" class="btn">
+        <img src="assets/ddos505.png" alt="SC DDOS 505">
+        <p class="desc">Versi stabil + website auto k.o.</p>
+        <span>SC DDOS 505 – 15K</span>
+      </a>
+
+      <a href="https://wa.me/62895622182398?text=bang%20Shoheh%20saya%20mau%20SC%20XVENZO%2015K" class="btn">
+        <img src="assets/sc venz.png" alt="RESELLER SC DDOS-25K">
+        <p class="desc">Fitur cek sendiri + Anti Yapping .</p>
+        <span>SC XVENZO – 15K</span>
+      </a>
+
+      <a href="https://wa.me/62895622182398?text=bang%20Shoheh%20saya%20mau%20SC%20XVENZO%20UP1x%2018K" class="btn">
+        <img src="assets/reseler.png" alt="SC DDOS 505">
+        <p class="desc">Free up SC-XVENZO 1x.</p>
+        <span>FREE UP SC-XVENZO 1X – 18K</span>
+      </a>
+
+      <a href="https://wa.me/62895622182398?text=bang%20Shoheh%20saya%20mau%20SC%20XVENZO%20UP2x%2024K" class="btn">
+        <img src="assets/elaina6.png" alt="SC DDOS 505">
+        <p class="desc">Free up SC-XVENZO 2x.</p>
+        <span>FREE UP SC-XVENZO 2X – 24K</span>
+      </a>
+
+      <a href="https://wa.me/62895622182398?text=bang%20Shoheh%20saya%20mau%20RESELLER%20SC%20XVENZO%2030K" class="btn">
+        <img src="assets/elaina8.png" alt="SC DDOS 505">
+        <p class="desc">Auto balmod pastinya + dikenal,di urus,dll.</p>
+        <span>RESELLER SC XVENZO – 30K</span>
+      </a>
+
+    
+    
+      <!-- Tambahin yang lain sama formatnya -->
+    </div>
+  </div>
+
+  <script>
+    let musicPlayed = false;
+    function playMusic() {
+      if (!musicPlayed) {
+        const audio = document.getElementById('bg-music');
+        audio.volume = 0.5;
+        audio.play().catch(e => console.log('Gagal play musik:', e));
+        musicPlayed = true;
+      }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      const audio = document.getElementById('bg-music');
+      audio.volume = 0.5; // Set volume to 50%
+      audio.loop = true; // Loop the music
+    });
+    document.addEventListener('auto', playMusic);
+    document.addEventListener('touchstart', playMusic);
+  </script>
+</body>
+</html>

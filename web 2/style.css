@@ -1,0 +1,72 @@
+/* Background Foto */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('assets/foto-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #fff;
+  text-align: center;
+}
+
+/* Container semi-transparan */
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  min-height: 100vh;
+  padding: 40px 20px;
+}
+
+/* Judul Glowing */
+.judul {
+  font-size: 49px;
+  margin-bottom: 60px;
+  color: #00fff7;
+  text-shadow: 0 0 10px #365b5a, 0 0 20px #247976;
+}
+
+/* Grid Button */
+.button-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 25px;
+  padding: 20px;
+}
+
+/* Desain Button */
+.btn {
+  background-color: rgba(20, 20, 20, 0.85);
+  border: 2px solid #00adb5;
+  border-radius: 20px;
+  padding: 15px;
+  text-decoration: none;
+  color: white;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 15px #00adb5;
+}
+
+.btn img {
+  width: 100px;
+  height: 100px;
+  border-radius: 12px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.desc {
+  font-size: 13px;
+  color: #ccc;
+  margin-bottom: 5px;
+}
+
+.btn span {
+  font-weight: bold;
+  font-size: 16px;
+  color: #00ffd5;
+}
